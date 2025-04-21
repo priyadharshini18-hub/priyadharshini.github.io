@@ -27,13 +27,22 @@ const Home = () => {
       </div>
 
       {/* Right Image */}
-      <div className="-mt-16 md:-mt-28 transform scale-110">
-        <img
-          src={profileImage}
-          alt="Priyadharshini Ganeshkumar"
-          className="rounded-full w-64 h-64 object-cover shadow-xl"
-        />
-      </div>
+      
+      <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-xl">
+  <img
+    src={profileImage}
+    alt="Priyadharshini Ganeshkumar"
+    className="absolute w-[150%] h-[150%] object-cover"
+    style={{ 
+      top: "-54%",     // move image up more
+      left: "1%",    // move image slightly right
+      transform: "scale(1.5)"
+    }}
+  />
+</div>
+
+
+
     </section>
   );
 };
