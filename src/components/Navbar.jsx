@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
