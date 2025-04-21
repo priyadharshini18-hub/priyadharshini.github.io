@@ -8,14 +8,14 @@ const Home = () => {
       className="relative min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-16 gap-12 text-center md:text-left overflow-hidden"
     >
       {/* 🔮 Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-gradient blur-2xl opacity-30 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-gradient-x blur-2xl opacity-60 -z-10" />
 
       {/* Left Text */}
       <div className="max-w-xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Priyadharshini Ganeshkumar
         </h1>
-        <p className="text-gray-200 mb-6">
+        <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
           I am Priyadharshini Ganeshkumar, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.
         </p>
         <a
