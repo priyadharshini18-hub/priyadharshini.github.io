@@ -1,28 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import WorkExperience from './components/WorkExperience';
+import Projects from './components/Projects';
+import Leadership from './components/Leadership';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
-        {/* 🔽 Add this Tailwind test below */}
-        <div className="text-3xl font-bold underline text-green-400 mt-6">
-          Tailwind is working!
-        </div>
-      </header>
+    <div className="bg-black text-white font-sans">
+      <Navbar />
+      <Home />
+      <About />
+      <WorkExperience />
+      <Projects />
+      <Leadership />
     </div>
   );
 }
