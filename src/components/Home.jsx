@@ -1,5 +1,6 @@
 import React from 'react';
 import profileImage from '../assets/profile.jpg';
+import { GraduationCap, Briefcase } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
 
       {/* Left Text */}
       <div className="max-w-xl">
-      <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Priyadharshini Ganeshkumar
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
@@ -24,25 +25,44 @@ const Home = () => {
         >
           Let’s get started →
         </a>
+
+        {/* 🏫 Career/Education Section */}
+        <div className="mt-20 space-y-6">
+          <div className="flex items-center gap-4">
+            <GraduationCap size={70} className="text-green-400" />
+            <div>
+              <p className="text-2xl text-white font-medium">CS Graduate</p>
+              <div className="flex items-center">
+                <span className="text-xl ml-2 text-gray-300">University of California, Davis</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Briefcase size={70} className="text-green-400" />
+            <div>
+              <p className="text-2xl text-white font-medium">Ex-Software Engineer</p>
+              <div className="flex items-center">
+                <span className="text-xl ml-2 text-gray-300">JP Morgan Chase, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Right Image */}
-      
       <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-xl">
-  <img
-    src={profileImage}
-    alt="Priyadharshini Ganeshkumar"
-    className="absolute w-[150%] h-[150%] object-cover"
-    style={{ 
-      top: "-54%",     // move image up more
-      left: "1%",    // move image slightly right
-      transform: "scale(1.5)"
-    }}
-  />
-</div>
-
-
-
+        <img
+          src={profileImage}
+          alt="Priyadharshini Ganeshkumar"
+          className="absolute w-[150%] h-[150%] object-cover"
+          style={{
+            top: '-54%',
+            left: '1%',
+            transform: 'scale(1.5)',
+          }}
+        />
+      </div>
     </section>
   );
 };
