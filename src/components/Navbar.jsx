@@ -12,7 +12,7 @@ const Navbar = () => {
           <li><a href="#work" className="hover:text-green-400">Work Experience</a></li>
           <li><a href="#projects" className="hover:text-green-400">Projects</a></li>
           <li><a href="#leadership" className="hover:text-green-400">Leadership</a></li>
-          <li><a href="#contactme" className="hover:text-green-400">Contach Me</a></li>
+          <li><a href="#contactme" className="hover:text-green-400">Contact Me</a></li>
         </ul>
 
         {/* Icons - right side */}
