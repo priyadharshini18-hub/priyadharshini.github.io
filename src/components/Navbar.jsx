@@ -26,6 +26,14 @@ const Navbar = () => {
             <FaLinkedin />
           </a>
           <a
+            href="https://github.com/priyadharshini18-hub"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-green-400"
+          >
+            <FaGithub />
+          </a>
+          <a
             href="mailto:priyadharshini6508@gmail.com"
             className="hover:text-green-400"
           >

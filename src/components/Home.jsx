@@ -27,11 +27,11 @@ const Home = () => {
       </div>
 
       {/* Right Image */}
-      <div>
+      <div className="-mt-16 md:-mt-28 transform scale-110">
         <img
           src={profileImage}
           alt="Priyadharshini Ganeshkumar"
-          className="rounded-full w-52 h-52 object-cover shadow-xl"
+          className="rounded-full w-64 h-64 object-cover shadow-xl"
         />
       </div>
     </section>
