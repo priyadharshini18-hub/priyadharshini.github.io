@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/priyadharshini.github.io/static/css/main.63a9fe96.css",
-    "main.js": "/priyadharshini.github.io/static/js/main.78310184.js",
+    "main.css": "/priyadharshini.github.io/static/css/main.dbc5d362.css",
+    "main.js": "/priyadharshini.github.io/static/js/main.d859ed59.js",
     "static/js/453.0035970e.chunk.js": "/priyadharshini.github.io/static/js/453.0035970e.chunk.js",
     "static/media/profile.jpg": "/priyadharshini.github.io/static/media/profile.b4edd1e33752664c0c2f.jpg",
     "index.html": "/priyadharshini.github.io/index.html",
-    "main.63a9fe96.css.map": "/priyadharshini.github.io/static/css/main.63a9fe96.css.map",
-    "main.78310184.js.map": "/priyadharshini.github.io/static/js/main.78310184.js.map",
+    "main.dbc5d362.css.map": "/priyadharshini.github.io/static/css/main.dbc5d362.css.map",
+    "main.d859ed59.js.map": "/priyadharshini.github.io/static/js/main.d859ed59.js.map",
     "453.0035970e.chunk.js.map": "/priyadharshini.github.io/static/js/453.0035970e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63a9fe96.css",
-    "static/js/main.78310184.js"
+    "static/css/main.dbc5d362.css",
+    "static/js/main.d859ed59.js"
   ]
 }
