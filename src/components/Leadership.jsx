@@ -1,0 +1,1 @@
+const Leadership = () => <section id='leadership' className='min-h-screen p-6'>Leadership</section>; export default Leadership;

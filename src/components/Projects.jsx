@@ -1,0 +1,1 @@
+const Projects = () => <section id='projects' className='min-h-screen p-6'>Projects</section>; export default Projects;

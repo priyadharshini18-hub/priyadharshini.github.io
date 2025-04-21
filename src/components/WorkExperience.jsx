@@ -1,0 +1,1 @@
+const WorkExperience = () => <section id='work' className='min-h-screen p-6'>Work Experience</section>; export default WorkExperience;

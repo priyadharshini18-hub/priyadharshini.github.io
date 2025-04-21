@@ -1,0 +1,1 @@
+const About = () => <section id='about' className='min-h-screen p-6'>About Me</section>; export default About;
