@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import About from './components/About';
+import TechStack from './components/TechStack';
 import WorkExperience from './components/WorkExperience';
 import Projects from './components/Projects';
 import Leadership from './components/Leadership';
@@ -11,7 +11,7 @@ function App() {
     <div className="bg-black text-white font-sans">
       <Navbar />
       <Home />
-      <About />
+      <TechStack />
       <WorkExperience />
       <Projects />
       <Leadership />

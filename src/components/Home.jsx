@@ -20,16 +20,16 @@ const Home = () => {
           I am Priyadharshini Ganeshkumar, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.
         </p>
         <a
-          href="#about"
+          href="#techstack"
           className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition"
         >
           Let’s get started →
         </a>
 
-        {/* 🏫 Career/Education Section */}
+        {/*Career/Education Section */}
         <div className="mt-20 space-y-6">
           <div className="flex items-center gap-4">
-            <GraduationCap size={70} className="text-green-400" />
+            <GraduationCap size={60} className="text-green-400" />
             <div>
               <p className="text-2xl text-white font-medium">CS Graduate</p>
               <div className="flex items-center">
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Briefcase size={70} className="text-green-400" />
+            <Briefcase size={60} className="text-green-400" />
             <div>
               <p className="text-2xl text-white font-medium">Ex-Software Engineer</p>
               <div className="flex items-center">

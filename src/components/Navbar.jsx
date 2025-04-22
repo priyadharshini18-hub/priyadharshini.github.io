@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Menu - left side */}
         <ul className="flex gap-14 text-xl font-sans font-semibold tracking-wide">
           <li><a href="#home" className="hover:text-green-400 transition-colors">Home</a></li>
-          <li><a href="#about" className="hover:text-green-400 transition-colors">About Me</a></li>
+          <li><a href="#techstack" className="hover:text-green-400 transition-colors">Tech Stack</a></li>
           <li><a href="#work" className="hover:text-green-400 transition-colors">Work Experience</a></li>
           <li><a href="#projects" className="hover:text-green-400 transition-colors">Projects</a></li>
           <li><a href="#leadership" className="hover:text-green-400 transition-colors">Leadership</a></li>
