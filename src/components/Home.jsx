@@ -29,30 +29,30 @@ const Home = () => {
         {/* 🧑‍🎓 Career/Education Section */}
         <div className="mt-20 space-y-8">
           <div className="flex items-center gap-4">
-            <GraduationCap size={60} className="text-green-400" />
+            <GraduationCap size={40} className="text-green-400" />
             <div>
-              <p className="text-2xl text-white font-medium">CS Graduate</p>
+              <p className="text-xl text-white font-medium">CS Graduate</p>
               <div className="flex items-center">
-                <span className="text-xl ml-2 text-gray-300">University of California, Davis</span>
+                <span className="text-lg ml-2 text-gray-300">University of California, Davis</span>
               </div>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <Briefcase size={60} className="text-green-400" />
+            <Briefcase size={40} className="text-green-400" />
             <div>
-              <p className="text-2xl text-white font-medium">Ex-Software Engineer</p>
+              <p className="text-xl text-white font-medium">Ex-Software Engineer</p>
               <div className="flex items-center">
-                <span className="text-xl ml-2 text-gray-300">JP Morgan Chase, India</span>
+                <span className="text-lg ml-2 text-gray-300">JP Morgan Chase, India</span>
               </div>
             </div>
           </div>
 
           {/* Resume Section Below Work Experience */}
           <div className="flex items-center gap-4">
-            <FileText size={60} className="text-green-400" />
+            <FileText size={40} className="text-green-400" />
             <div>
-              <p className="text-2xl text-white font-medium">Resume</p>
+              <p className="text-lg text-white font-medium">Resume</p>
               <div className="flex items-center">
               <a
                 href="/Priyadharshini_Resume2025.pdf"

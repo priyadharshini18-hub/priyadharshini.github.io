@@ -46,10 +46,10 @@ const TechStack = () => {
                 <p className="text-gray-400 mb-2">Grade: 4.0 / 4.0</p>
                 <p className="text-lg text-gray-400 mb-1 font-semibold">Coursework:</p>
                 <ul className="list-disc pl-5 text-gray-300 text-base space-y-1">
-                  <li className="text-lg">ECS 271 Machine Learn & Discoveries</li>
-                  <li className="text-lg">ECS 265 Distributed Database Systems</li>
-                  <li className="text-lg">ECS 220 Design and Analysis of Algorithm</li>
-                  <li className="text-lg">STA 220 Data & Web Technologies for Data Analysis</li>
+                  <li className="text-base">ECS 271 Machine Learn & Discoveries</li>
+                  <li className="text-base">ECS 265 Distributed Database Systems</li>
+                  <li className="text-base">ECS 220 Design and Analysis of Algorithm</li>
+                  <li className="text-base">STA 220 Data & Web Technologies for Data Analysis</li>
                 </ul>
               </div>
 
@@ -60,10 +60,10 @@ const TechStack = () => {
                 <p className="text-gray-400 mb-2">Grade: 9.51 / 10</p>
                 <p className="text-lg text-gray-400 mb-1 font-semibold">Coursework:</p>
                 <ul className="list-disc pl-5 text-gray-300 text-base space-y-1">
-                  <li className="text-lg">151303 Data Structures & Algorithms</li>
-                  <li className="text-lg">151203 Object Oriented Programming</li>
-                  <li className="text-lg">151403 Operating Systems</li>
-                  <li className="text-lg">151009 Cloud Computing</li>
+                  <li className="text-base">151303 Data Structures & Algorithms</li>
+                  <li className="text-base">151203 Object Oriented Programming</li>
+                  <li className="text-base">151403 Operating Systems</li>
+                  <li className="text-base">151009 Cloud Computing</li>
                 </ul>
               </div>
             </div>
@@ -79,19 +79,19 @@ const TechStack = () => {
                 >
                   <div className="flex items-center mb-4">
                     {skill.icon}
-                    <h3 className="text-lg font-semibold ml-3 text-white">{skill.category}</h3>
+                    <h3 className="text-base font-semibold ml-3 text-white">{skill.category}</h3>
                   </div>
 
                   {skill.category === 'Tools and Frameworks' ? (
                     <ul className="grid grid-cols-2 gap-x-6 list-disc list-inside text-gray-300 pl-2">
                       {skill.items.flat().map((item, idx) => (
-                        <li key={idx} className="mb-1 text-lg">{item}</li>
+                        <li key={idx} className="mb-1 text-base">{item}</li>
                       ))}
                     </ul>
                   ) : (
                     <ul className="list-disc pl-5 text-gray-300">
                       {skill.items.map((item, idx) => (
-                        <li key={idx} className="mb-1 text-lg">{item}</li>
+                        <li key={idx} className="mb-1 text-base">{item}</li>
                       ))}
                     </ul>
                   )}
@@ -102,7 +102,7 @@ const TechStack = () => {
               <div className="bg-[#1B1B1B] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-4">
                 <BadgeCheck className="text-green-400" size={24} />
-                  <h3 className="text-lg font-semibold ml-3 text-white">Other Skills</h3>
+                  <h3 className="text-base font-semibold ml-3 text-white">Other Skills</h3>
                 </div>
                 <ul className="list-disc pl-5 text-gray-300">
                   <li className="mb-1 text-lg">Agile / Scrum</li>
