@@ -1,6 +1,6 @@
 import React from 'react';
 import profileImage from '../assets/profile.jpg';
-import { GraduationCap, Briefcase } from 'lucide-react';
+import { GraduationCap, Briefcase, FileText } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -26,8 +26,8 @@ const Home = () => {
           Let’s get started →
         </a>
 
-        {/*Career/Education Section */}
-        <div className="mt-20 space-y-6">
+        {/* 🧑‍🎓 Career/Education Section */}
+        <div className="mt-20 space-y-8">
           <div className="flex items-center gap-4">
             <GraduationCap size={60} className="text-green-400" />
             <div>
@@ -47,6 +47,25 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* Resume Section Below Work Experience */}
+          <div className="flex items-center gap-4">
+            <FileText size={60} className="text-green-400" />
+            <div>
+              <p className="text-2xl text-white font-medium">Resume</p>
+              <div className="flex items-center">
+              <a
+                href="/Priyadharshini_Resume2025.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg text-green-400 underline hover:text-green-300 ml-2"
+              >
+                View / Download
+              </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -63,6 +82,7 @@ const Home = () => {
           }}
         />
       </div>
+
     </section>
   );
 };
