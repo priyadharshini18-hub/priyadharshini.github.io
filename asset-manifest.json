@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/priyadharshini.github.io/static/css/main.c954491c.css",
-    "main.js": "/priyadharshini.github.io/static/js/main.f405ada8.js",
+    "main.js": "/priyadharshini.github.io/static/js/main.6c7f38e4.js",
     "static/js/453.0035970e.chunk.js": "/priyadharshini.github.io/static/js/453.0035970e.chunk.js",
     "static/media/profile.jpg": "/priyadharshini.github.io/static/media/profile.b4edd1e33752664c0c2f.jpg",
     "index.html": "/priyadharshini.github.io/index.html",
     "main.c954491c.css.map": "/priyadharshini.github.io/static/css/main.c954491c.css.map",
-    "main.f405ada8.js.map": "/priyadharshini.github.io/static/js/main.f405ada8.js.map",
+    "main.6c7f38e4.js.map": "/priyadharshini.github.io/static/js/main.6c7f38e4.js.map",
     "453.0035970e.chunk.js.map": "/priyadharshini.github.io/static/js/453.0035970e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c954491c.css",
-    "static/js/main.f405ada8.js"
+    "static/js/main.6c7f38e4.js"
   ]
 }
