@@ -55,7 +55,7 @@ const Home = () => {
               <p className="text-lg text-white font-medium">Resume</p>
               <div className="flex items-center">
               <a
-                href="/Priyadharshini_Resume2025.pdf"
+                href={`${process.env.PUBLIC_URL}/Priyadharshini_Resume2025.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg text-green-400 underline hover:text-green-300 ml-2"
