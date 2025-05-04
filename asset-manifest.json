@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/priyadharshini.github.io/static/css/main.c954491c.css",
-    "main.js": "/priyadharshini.github.io/static/js/main.6c7f38e4.js",
+    "main.css": "/priyadharshini.github.io/static/css/main.8be15931.css",
+    "main.js": "/priyadharshini.github.io/static/js/main.e5ae3fab.js",
     "static/js/453.0035970e.chunk.js": "/priyadharshini.github.io/static/js/453.0035970e.chunk.js",
+    "static/media/recommendation.jpeg": "/priyadharshini.github.io/static/media/recommendation.810cf34bd5e1a0c14534.jpeg",
     "static/media/profile.jpg": "/priyadharshini.github.io/static/media/profile.b4edd1e33752664c0c2f.jpg",
+    "static/media/ai_in_health.jpeg": "/priyadharshini.github.io/static/media/ai_in_health.7af7cbba4b7aa92180dd.jpeg",
+    "static/media/food_ordering.jpeg": "/priyadharshini.github.io/static/media/food_ordering.00e7ca990e6233a12bab.jpeg",
+    "static/media/cognitive_rehab.jpeg": "/priyadharshini.github.io/static/media/cognitive_rehab.008073fafc14e93e06b7.jpeg",
     "index.html": "/priyadharshini.github.io/index.html",
-    "main.c954491c.css.map": "/priyadharshini.github.io/static/css/main.c954491c.css.map",
-    "main.6c7f38e4.js.map": "/priyadharshini.github.io/static/js/main.6c7f38e4.js.map",
+    "main.8be15931.css.map": "/priyadharshini.github.io/static/css/main.8be15931.css.map",
+    "main.e5ae3fab.js.map": "/priyadharshini.github.io/static/js/main.e5ae3fab.js.map",
     "453.0035970e.chunk.js.map": "/priyadharshini.github.io/static/js/453.0035970e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c954491c.css",
-    "static/js/main.6c7f38e4.js"
+    "static/css/main.8be15931.css",
+    "static/js/main.e5ae3fab.js"
   ]
 }
