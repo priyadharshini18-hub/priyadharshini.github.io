@@ -44,7 +44,8 @@ const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="projects" className="min-h-screen px-6 py-20 bg-[#0F0F0F] text-white">
+    <section id="projects" className="min-h-screen p-6 text-white">
+
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center text-green-400">Projects</h2>
 

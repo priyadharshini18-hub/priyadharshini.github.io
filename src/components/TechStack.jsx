@@ -24,16 +24,16 @@ const TechStack = () => {
   ];
 
   return (
-    <section id="techstack" className="min-h-screen px-6 py-20 bg-[#0F0F0F] text-white">
+    <section id="techstack" className="min-h-screen p-6 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-bold mb-12 text-center text-green-400">Tech Stack</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
-          {/* Left column: Education */}
+
           <div className="lg:col-span-2 space-y-8">
             <div className="bg-[#1B1B1B] p-6 rounded-lg shadow-lg">
-              {/* 📘 Education Heading with Icon */}
+
               <div className="flex items-center mb-6">
                 <BookOpen className="text-green-400 mr-3" size={28} />
                 <h3 className="text-3xl font-semibold text-white-400">Education</h3>
@@ -69,7 +69,7 @@ const TechStack = () => {
             </div>
           </div>
 
-          {/* Right column: Skills Grid + My Journey */}
+
           <div className="lg:col-span-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {skills.map((skill, index) => (
@@ -98,7 +98,6 @@ const TechStack = () => {
                 </div>
               ))}
 
-              {/* Other Skills box */}
               <div className="bg-[#1B1B1B] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-4">
                 <BadgeCheck className="text-green-400" size={24} />

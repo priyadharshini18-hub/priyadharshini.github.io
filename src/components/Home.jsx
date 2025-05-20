@@ -8,10 +8,8 @@ const Home = () => {
       id="home"
       className="relative min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-16 gap-12 text-center md:text-left overflow-hidden"
     >
-      {/* 🔮 Animated Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-gradient-x blur-2xl opacity-60 -z-10" />
 
-      {/* Left Text */}
       <div className="max-w-xl">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Priyadharshini Ganeshkumar
@@ -26,7 +24,6 @@ const Home = () => {
           Let’s get started →
         </a>
 
-        {/* 🧑‍🎓 Career/Education Section */}
         <div className="mt-20 space-y-8">
           <div className="flex items-center gap-4">
             <GraduationCap size={40} className="text-green-400" />
@@ -48,7 +45,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Resume Section Below Work Experience */}
           <div className="flex items-center gap-4">
             <FileText size={40} className="text-green-400" />
             <div>
@@ -69,8 +65,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Right Image */}
-      <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-xl">
+      <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-[0_0_25px_#22c55e66]">
         <img
           src={profileImage}
           alt="Priyadharshini Ganeshkumar"

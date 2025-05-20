@@ -5,6 +5,7 @@ import TechStack from './components/TechStack';
 import WorkExperience from './components/WorkExperience';
 import Projects from './components/Projects';
 import Leadership from './components/Leadership';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <WorkExperience />
       <Projects />
       <Leadership />
+      <Contact />
     </div>
   );
 }
