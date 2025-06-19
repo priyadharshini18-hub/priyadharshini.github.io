@@ -1,6 +1,7 @@
 import React from 'react';
 import profileImage from '../assets/profile.jpg';
 import { GraduationCap, Briefcase, FileText } from 'lucide-react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
   return (
@@ -14,9 +15,36 @@ const Home = () => {
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Priyadharshini Ganeshkumar
         </h1>
-        <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-          I am Priyadharshini Ganeshkumar, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.
+
+        <div className="block md:hidden mb-6 relative w-56 h-56 mx-auto rounded-full shadow-[0_0_25px_#22c55e66] overflow-hidden">
+          <img
+            src={profileImage}
+            alt="Priyadharshini Ganeshkumar"
+            className="absolute w-[150%] h-[150%] object-cover"
+            style={{
+              top: '-54%',
+              left: '1%',
+              transform: 'scale(1.5)',
+            }}
+          />
+        </div>
+
+        <p
+          className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed min-h-[96px]"
+        >
+          <Typewriter
+            words={[
+              'I am Priyadharshini Ganeshkumar, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.'
+            ]}
+            loop={1}
+            cursor
+            cursorStyle="|"
+            typeSpeed={30}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
         </p>
+
         <a
           href="#techstack"
           className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition"
@@ -50,22 +78,22 @@ const Home = () => {
             <div>
               <p className="text-lg text-white font-medium">Resume</p>
               <div className="flex items-center">
-              <a
-                href={`${process.env.PUBLIC_URL}/Priyadharshini_Resume2025.pdf`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg text-green-400 underline hover:text-green-300 ml-2"
-              >
-                View / Download
-              </a>
+                <a
+                  href={`${process.env.PUBLIC_URL}/Priyadharshini_Resume2025.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg text-green-400 underline hover:text-green-300 ml-2"
+                >
+                  View / Download
+                </a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
-      <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-[0_0_25px_#22c55e66]">
+      {/* Desktop/Tablet profile image (same as before) */}
+      <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-[0_0_25px_#22c55e66] hidden md:block">
         <img
           src={profileImage}
           alt="Priyadharshini Ganeshkumar"
@@ -77,7 +105,6 @@ const Home = () => {
           }}
         />
       </div>
-
     </section>
   );
 };

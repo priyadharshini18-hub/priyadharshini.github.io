@@ -1,5 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Code, BookOpen, Cpu, Wrench, BadgeCheck } from 'lucide-react';
+import { motion, useInView, useAnimation } from 'framer-motion';
+
+const boxVariants = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
 
 const TechStack = () => {
   const skills = [
@@ -23,23 +29,36 @@ const TechStack = () => {
     },
   ];
 
+  // Shared animation control
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.2 });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [inView, controls]);
+
   return (
-    <section id="techstack" className="min-h-screen p-6 text-white">
+    <section id="techstack" className="min-h-screen p-6 text-white" ref={ref}>
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
         <h2 className="text-4xl font-bold mb-12 text-center text-green-400">Tech Stack</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
 
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-[#1B1B1B] p-6 rounded-lg shadow-lg">
-
+            <motion.div
+              variants={boxVariants}
+              initial="hidden"
+              animate={controls}
+              className="bg-[#1B1B1B] p-6 rounded-lg shadow-lg"
+            >
               <div className="flex items-center mb-6">
                 <BookOpen className="text-green-400 mr-3" size={28} />
                 <h3 className="text-3xl font-semibold text-white-400">Education</h3>
               </div>
-
-              {/* UC Davis */}
+              {/* ...Education content... */}
               <div className="mb-6">
                 <p className="text-xl font-semibold text-green-400 mb-1">University of California, Davis</p>
                 <p className="text-gray-300 italic mb-1">Master's degree, Computer Science (2024 - 2026)</p>
@@ -52,8 +71,6 @@ const TechStack = () => {
                   <li className="text-base">STA 220 Data & Web Technologies for Data Analysis</li>
                 </ul>
               </div>
-
-              {/* PSG */}
               <div className="mt-10">
                 <p className="text-xl font-semibold text-green-400 mb-1">PSG College of Technology, Coimbatore, India</p>
                 <p className="text-gray-300 italic mb-1">Bachelor of Technology, Information Technology (2018 - 2022)</p>
@@ -66,22 +83,23 @@ const TechStack = () => {
                   <li className="text-base">151009 Cloud Computing</li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
-
 
           <div className="lg:col-span-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {skills.map((skill, index) => (
-                <div
+                <motion.div
                   key={index}
+                  variants={boxVariants}
+                  initial="hidden"
+                  animate={controls}
                   className="bg-[#1B1B1B] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="flex items-center mb-4">
                     {skill.icon}
                     <h3 className="text-base font-semibold ml-3 text-white">{skill.category}</h3>
                   </div>
-
                   {skill.category === 'Tools and Frameworks' ? (
                     <ul className="grid grid-cols-2 gap-x-6 list-disc list-inside text-gray-300 pl-2">
                       {skill.items.flat().map((item, idx) => (
@@ -95,12 +113,16 @@ const TechStack = () => {
                       ))}
                     </ul>
                   )}
-                </div>
+                </motion.div>
               ))}
-
-              <div className="bg-[#1B1B1B] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <motion.div
+                variants={boxVariants}
+                initial="hidden"
+                animate={controls}
+                className="bg-[#1B1B1B] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              >
                 <div className="flex items-center mb-4">
-                <BadgeCheck className="text-green-400" size={24} />
+                  <BadgeCheck className="text-green-400" size={24} />
                   <h3 className="text-base font-semibold ml-3 text-white">Other Skills</h3>
                 </div>
                 <ul className="list-disc pl-5 text-gray-300">
@@ -108,7 +130,7 @@ const TechStack = () => {
                   <li className="mb-1 text-lg">Software Engineering</li>
                   <li className="mb-1 text-lg">Full-Stack Development</li>
                 </ul>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
