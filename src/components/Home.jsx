@@ -34,7 +34,7 @@ const Home = () => {
         >
           <Typewriter
             words={[
-              'I am Priyadharshini Ganeshkumar, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.'
+              'I am Priya, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.'
             ]}
             loop={1}
             cursor

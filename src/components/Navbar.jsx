@@ -44,14 +44,6 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-6 pb-6 text-white space-y-6 text-lg font-medium bg-[#1B1B1B] shadow-inner">
-          {/* Profile Photo */}
-          <div className="flex justify-center mb-4">
-            <img
-              src="https://your-image-url-here.jpg"
-              alt="Priyadharshini Ganeshkumar"
-              className="w-24 h-24 rounded-full object-cover border-2 border-green-400"
-            />
-          </div>
 
           {/* Menu Links */}
           <a href="#home" className="block hover:text-green-400" onClick={toggleMenu}>Home</a>
