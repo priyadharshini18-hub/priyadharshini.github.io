@@ -4,6 +4,7 @@ import {
   ChevronRight,
   Users,
   Code,
+  Mic,
   Building,
 } from 'lucide-react';
 
@@ -21,35 +22,43 @@ import img11 from '../assets/leadership/img11.jpg';
 
 const leadershipData = [
   {
-    title: "Lead of Bengaluru SEP Engineers Committee",
+    title: "Lead of Bengaluru Software Engineers Committee",
     company: "JP Morgan Chase & Co",
     date: "March 2023 - April 2024",
     description:
-      'Led the Software Engineers Committee in Bangalore, organizing social events, leadership connect sessions, and mentoring programs to help early-career engineers and campus hires transition from college to corporate environment.',
+      'Spearheaded the Bangalore Software Engineers Committee to empower over 200 early-career professionals and campus hires in their transition from academia to the corporate world. Orchestrated Hackathons, corporate social events, and speed-mentoring programs that fostered connections with senior leaders and accelerated career growth. ',
     icon: Users,
   },
   {
-    title: 'Social & Cultural Club Core Member',
+    title: 'Core Member of Social & Cultural Club, Bengaluru Tech Center',
     company: 'JP Morgan Chase & Co',
     date: 'August 2023 - June 2024',
     description:
-      'Organized large-scale corporate events at the Bangalore Tech Center to increase employee engagement and foster a better workplace environment.',
+      'Played a pivotal role in planning and executing large-scale corporate engagement events that enhanced workplace culture and employee participation. Served as the lead vocalist in the official Bengaluru Tech Center band, performing at multiple cultural events to boost team spirit and inclusivity.',
     icon: Building,
   },
   {
-    title: 'Code for Good Finalist',
+    title: 'Moderator of Fireside Chat with Alison McPherson',
+    company: 'JP Morgan Chase & Co',
+    date: 'March 2023',
+    description:
+      'Facilitated a Fireside Chat with Alison McPherson, Head of New Joiner Experience, Digital and Data & Analytics, for an audience of 100+ early-career engineers. Curated discussion around early-career mobility, corporate visibility, and leadership development. Enabled meaningful interaction with senior leadership and shared actionable career insights.',
+    icon: Mic,
+  },
+  {
+    title: 'Finalist in Code for Good Hackathon (CFG)',
     company: 'JP Morgan Chase & Co',
     date: 'June 2021',
     description:
-      'Top 3 finalist in India\'s largest hackathon, developed a sophisticated framework for Apni Shala Foundation to enhance social and emotional competencies among students in rural areas.',
+      'Selected as a top 3 finalist in India\'s largest social-impact hackathon, where I co-developed an advanced scheduling framework for the Apni Shala Foundation. This solution optimized facilitator-student class scheduling to boost student engagement in rural areas. Proudly contributed to driving educational equity through technology during the 24-hour event.',
     icon: Code,
   },
   {
-    title: 'Information Technology Association Executive',
-    company: 'College',
+    title: 'Executive Member of Information Technology Association ',
+    company: 'PSG College of Technology',
     date: '2021-2022',
     description:
-      'Facilitated placement journey of juniors through mock interviews and created challenging questions on HackerRank for community skill enhancement.',
+      'Facilitated technical symposiums and hackathons to nurture a culture of innovation and continuous learning. Supported junior students\' placement readiness through curated mock interviews and skill-building challenges on HackerRank, significantly improving their technical competencies and confidence.',
     icon: Users,
   },
 ];
@@ -59,7 +68,7 @@ const leadershipImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, 
 const leadershipCaptions = [
   "CFG'23 Event Support Volunteer @ JPMorgan Chase",
   "SEP Welcome Week Leadership Team @ JPMorgan Chase",
-  "Fireside Chat with Alison McPherson - Head of New Joiner Experience, Digital and Data & Analytics @ JPMC",
+  "Fireside Chat with Alison McPherson - Head of New Joiner Experience, Digital and Data & Analytics @ JPMorgan Chase",
   "Early Career Outreach – SEP Talent Acquisition Kiosk Showcase @ JPMorgan Chase",
   "Honored for Impact – Townhall Recognition at Bengaluru Tech Center 2024",
   "SEP Welcome Week Leadership Team @ JPMorgan Chase",
@@ -75,151 +84,137 @@ const Leadership = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeout(() => {
-        setCurrentImageIndex((prev) => (prev + 1) % leadershipImages.length);
-      }, 3);
+      setCurrentImageIndex((prev) => (prev + 1) % leadershipImages.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   const nextImage = () => {
-    setTimeout(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % leadershipImages.length);
-    }, 3);
+    setCurrentImageIndex((prev) => (prev + 1) % leadershipImages.length);
   };
 
   const prevImage = () => {
-    setTimeout(() => {
-      setCurrentImageIndex((prev) =>
-        (prev - 1 + leadershipImages.length) % leadershipImages.length
-      );
-    }, 3);
+    setCurrentImageIndex((prev) =>
+      (prev - 1 + leadershipImages.length) % leadershipImages.length
+    );
   };
 
   return (
-    <div className="min-h-screen bg-[#1B1B1B]">
-      <section id="leadership" className="min-h-screen p-6 text-white bg-[#1B1B1B]">
-        <div className="max-w-[90rem] mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-green-400">
-            Leadership Experience
-          </h2>
+    <section id="leadership" className="min-h-screen p-6 text-white bg-[#1B1B1B]">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 text-center text-green-400">
+          Leadership Experience
+        </h2>
 
-          {/* Leadership Items */}
-          <div className="space-y-1 mb-4">
-            {leadershipData.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={index}
-                  className="group hover:bg-[#2A2A2A] p-6 rounded-lg transition-all duration-300 border-l-4 border-green-400/30 hover:border-green-400"
-                  style={{
-                    animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`,
-                  }}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center group-hover:bg-green-500/20 transition-colors duration-300">
-                      <Icon className="w-6 h-6 text-green-400" />
-                    </div>
+        {/* Leadership Items */}
+        <div className="space-y-6 mb-16">
+          {leadershipData.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={index}
+                className="group hover:bg-[#2A2A2A] p-6 rounded-lg transition-all duration-300 border-l-4 border-green-400/30 hover:border-green-400"
+                style={{
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`,
+                }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center group-hover:bg-green-500/20 transition-colors duration-300">
+                    <Icon className="w-6 h-6 text-green-400" />
+                  </div>
 
-                    <div className="flex-1">
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                        <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition-colors duration-300">
-                          {item.title}
-                        </h3>
-                        <div className="text-right">
-                          <div className="text-green-400 font-medium text-lg">{item.company}</div>
-                          <div className="text-gray-400 text-sm">{item.date}</div>
-                        </div>
+                  <div className="flex-1">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                      <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition-colors duration-300">
+                        {item.title}
+                      </h3>
+                      <div className="text-right">
+                        <div className="text-green-400 font-medium text-lg">{item.company}</div>
+                        <div className="text-gray-400 text-sm">{item.date}</div>
                       </div>
-                      <p className="text-gray-300 leading-relaxed text-justify">
-                        {item.description}
-                      </p>
                     </div>
+                    <p className="text-gray-300 leading-relaxed text-justify">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
-              );
-            })}
-          </div>
-
-          {/* Carousel */}
-          <div className="relative">
-            <div className="relative h-[26rem] flex items-center justify-center">
-              {/* Left Arrow */}
-              <button
-                onClick={prevImage}
-                className="absolute left-4 z-10 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
-              >
-                <ChevronLeft className="w-7 h-7 text-white" />
-              </button>
-
-              {/* Image Group */}
-              <div className="flex gap-4 overflow-hidden px-16 w-full max-w-[90rem] justify-center transition-transform duration-500 ease-in-out">
-                {[0, 1, 2].map((offset) => {
-                  const index = (currentImageIndex + offset) % leadershipImages.length;
-                  return (
-                    <div key={index} className="w-[30%] px-2">
-                      <div
-                        className="relative h-[20rem] rounded-xl overflow-hidden group shadow-lg"
-                        style={{ willChange: 'transform' }}
-                      >
-                        <img
-                          src={leadershipImages[index]}
-                          alt={leadershipCaptions[index]}
-                          className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        <div className="absolute bottom-4 left-4 text-white text-base font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          {leadershipCaptions[index]}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
               </div>
-
-              {/* Right Arrow */}
-              <button
-                onClick={nextImage}
-                className="absolute right-4 z-10 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
-              >
-                <ChevronRight className="w-7 h-7 text-white" />
-              </button>
-            </div>
-
-            {/* Dots */}
-            <div className="flex justify-center mt-2 space-x-1">
-              {leadershipImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() =>
-                    setTimeout(() => setCurrentImageIndex(index), 3)
-                  }
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === currentImageIndex
-                      ? 'bg-green-400 w-8'
-                      : 'bg-gray-600 hover:bg-gray-500 w-2'
-                  }`}
-                  style={{ minWidth: '0.5rem' }}
-                />
-              ))}
-            </div>
-          </div>
+            );
+          })}
         </div>
 
-        <style jsx>{`
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(30px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
+        {/* Carousel */}
+        <div className="relative">
+          <div className="relative h-[26rem] flex items-center justify-center">
+            {/* Left Arrow */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 z-10 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+            >
+              <ChevronLeft className="w-7 h-7 text-white" />
+            </button>
+
+            {/* Image Group */}
+            <div className="flex gap-4 overflow-hidden px-16 w-full max-w-[90rem] justify-center transition-transform duration-500 ease-in-out">
+              {[0, 1, 2].map((offset) => {
+                const index = (currentImageIndex + offset) % leadershipImages.length;
+                return (
+                  <div key={index} className="w-[30%] px-2">
+                    <div className="relative h-[20rem] rounded-xl overflow-hidden group shadow-lg">
+                      <img
+                        src={leadershipImages[index]}
+                        alt={leadershipCaptions[index]}
+                        className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-4 left-4 text-white text-base font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        {leadershipCaptions[index]}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Right Arrow */}
+            <button
+              onClick={nextImage}
+              className="absolute right-4 z-10 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+            >
+              <ChevronRight className="w-7 h-7 text-white" />
+            </button>
+          </div>
+
+          {/* Dots */}
+          <div className="flex justify-center mt-6 space-x-2">
+            {leadershipImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentImageIndex(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === currentImageIndex
+                    ? 'bg-green-400 w-8'
+                    : 'bg-gray-600 hover:bg-gray-500 w-2'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
           }
-        `}</style>
-      </section>
-    </div>
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+    </section>
   );
 };
 

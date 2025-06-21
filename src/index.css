@@ -5,6 +5,9 @@
 body {
   @apply bg-black text-white;
 }
+body {
+  background-color: #1B1B1B !important;
+}
 
 
 html {
