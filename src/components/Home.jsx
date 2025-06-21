@@ -1,7 +1,8 @@
 import React from 'react';
 import profileImage from '../assets/profile.jpg';
 import { GraduationCap, Briefcase, FileText } from 'lucide-react';
-import { Typewriter } from 'react-simple-typewriter';
+import { motion } from 'framer-motion';
+
 
 const Home = () => {
   return (
@@ -29,27 +30,22 @@ const Home = () => {
           />
         </div>
 
-        <p
+        <motion.p
           className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed min-h-[96px]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
-          <Typewriter
-            words={[
-              'I am Priya, a graduate student at UC Davis in the Department of Computer Science. With a focus on machine learning and data analysis.'
-            ]}
-            loop={1}
-            cursor
-            cursorStyle="|"
-            typeSpeed={30}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
-        </p>
+          I’m Priya, a graduate student in Computer Science at UC Davis,
+          specializing in machine learning, data analysis, and solving
+          real-world problems through technology.
+        </motion.p>
 
         <a
           href="#techstack"
           className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition"
         >
-          Let’s get started →
+          Let’s take a Tour →
         </a>
 
         <div className="mt-20 space-y-8">
