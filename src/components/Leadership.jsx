@@ -7,6 +7,7 @@ import {
   Mic,
   Building,
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 import img1 from '../assets/leadership/img1.png';
 import img2 from '../assets/leadership/img2.png';
@@ -111,12 +112,13 @@ const Leadership = () => {
           {leadershipData.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div
+              <motion.div
                 key={index}
                 className="group bg-[#1B1B1B] p-6 rounded-lg transition-all duration-300 border-l-4 border-green-400/30 hover:border-green-400"
-                style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`,
-                }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.15 }}
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center group-hover:bg-green-500/20 transition-colors duration-300">
@@ -138,7 +140,7 @@ const Leadership = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
@@ -201,19 +203,6 @@ const Leadership = () => {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </section>
   );
 };

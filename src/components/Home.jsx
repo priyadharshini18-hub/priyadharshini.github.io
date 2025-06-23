@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import profileImage from '../assets/profile.jpg';
 import { GraduationCap, Briefcase, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-
 const Home = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section
       id="home"
@@ -17,15 +18,20 @@ const Home = () => {
           Priyadharshini Ganeshkumar
         </h1>
 
-        <div className="block md:hidden mb-6 relative w-56 h-56 mx-auto rounded-full shadow-[0_0_25px_#22c55e66] overflow-hidden">
+        {/* Mobile profile image */}
+        <div
+          className="block md:hidden mb-6 relative w-56 h-56 mx-auto rounded-full shadow-[0_0_40px_#22c55eff] overflow-hidden cursor-pointer"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <img
             src={profileImage}
             alt="Priyadharshini Ganeshkumar"
-            className="absolute w-[150%] h-[150%] object-cover"
+            className="absolute w-[150%] h-[150%] object-cover transition-transform duration-500"
             style={{
               top: '-54%',
               left: '1%',
-              transform: 'scale(1.5)',
+              transform: isHovered ? 'scale(1.05)' : 'scale(1)',
             }}
           />
         </div>
@@ -39,7 +45,6 @@ const Home = () => {
           Hi, I'm Priya, a Computer Science grad student at UC Davis passionate about machine learning, data analysis, and turning ideas into impactful solutions. 
           I use technology to tackle real-world challenges and bring meaningful innovations to life. 
           I enjoy solving DSA and algorithm problems and love working with data, and this passion continues to grow through focused learning in intelligent, data-driven problem solving.
-
         </motion.p>
 
         <motion.a
@@ -50,8 +55,8 @@ const Home = () => {
           }}
           transition={{
             repeat: Infinity,
-            repeatDelay: 2, // 2 seconds between shakes
-            duration: 0.4, // how fast the shake happens
+            repeatDelay: 2,
+            duration: 0.4,
             ease: "easeInOut",
           }}
         >
@@ -98,16 +103,20 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Desktop/Tablet profile image (same as before) */}
-      <div className="relative h-80 w-80 overflow-hidden rounded-full shadow-[0_0_25px_#22c55e66] hidden md:block">
+      {/* Desktop/Tablet profile image */}
+      <div
+        className="relative h-80 w-80 overflow-hidden rounded-full shadow-[0_0_25px_#22c55e66] hidden md:block cursor-pointer"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <img
           src={profileImage}
           alt="Priyadharshini Ganeshkumar"
-          className="absolute w-[150%] h-[150%] object-cover"
+          className="absolute w-[150%] h-[150%] object-cover transition-transform duration-500"
           style={{
             top: '-54%',
             left: '1%',
-            transform: 'scale(1.5)',
+            transform: isHovered ? 'scale(1.55)' : 'scale(1.5)',
           }}
         />
       </div>

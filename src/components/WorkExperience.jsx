@@ -1,5 +1,6 @@
 import React from 'react';
 import { Briefcase, Calendar, CheckCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const experiences = [
   {
@@ -46,9 +47,13 @@ const WorkExperience = () => {
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-[#1B1B1B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
                 <div>
@@ -89,7 +94,7 @@ const WorkExperience = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
