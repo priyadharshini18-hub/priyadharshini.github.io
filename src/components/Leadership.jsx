@@ -27,7 +27,7 @@ const leadershipData = [
     company: "JP Morgan Chase & Co",
     date: "March 2023 - April 2024",
     description:
-      'Spearheaded the Bangalore Software Engineers Committee to empower over 200 early-career professionals and campus hires...',
+      'Spearheaded the Bangalore Software Engineers Committee to empower over 200 early-career professionals and campus hires in their transition from academia to the corporate world. Orchestrated Hackathons, corporate social events, and speed-mentoring programs that fostered connections with senior leaders and accelerated career growth.',
     icon: Users,
   },
   {
@@ -35,7 +35,7 @@ const leadershipData = [
     company: 'JP Morgan Chase & Co',
     date: 'August 2023 - June 2024',
     description:
-      'Played a pivotal role in planning and executing large-scale corporate engagement events...',
+      'Played a pivotal role in planning and executing large-scale corporate engagement events that enhanced workplace culture and employee participation. Served as the lead vocalist in the official Bengaluru Tech Center band, performing at multiple cultural events to boost team spirit and inclusivity.',
     icon: Building,
   },
   {
@@ -43,7 +43,7 @@ const leadershipData = [
     company: 'JP Morgan Chase & Co',
     date: 'March 2023',
     description:
-      'Facilitated a Fireside Chat with Alison McPherson, Head of New Joiner Experience...',
+      'Facilitated a Fireside Chat with Alison McPherson, Head of New Joiner Experience, Digital and Data & Analytics, for an audience of 100+ early-career engineers. Curated discussion around early-career mobility, corporate visibility, and leadership development. Enabled meaningful interaction with senior leadership and shared actionable career insights.',
     icon: Mic,
   },
   {
@@ -51,7 +51,7 @@ const leadershipData = [
     company: 'JP Morgan Chase & Co',
     date: 'June 2021',
     description:
-      'Selected as a top 3 finalist in India\'s largest social-impact hackathon...',
+      'Selected as a top 3 finalist in India\'s largest social-impact hackathon, where I co-developed an advanced scheduling framework for the Apni Shala Foundation. This solution optimized facilitator-student class scheduling to boost student engagement in rural areas. Proudly contributed to driving educational equity through technology during the 24-hour event.',
     icon: Code,
   },
   {
@@ -59,7 +59,7 @@ const leadershipData = [
     company: 'PSG College of Technology',
     date: '2021-2022',
     description:
-      'Facilitated technical symposiums and hackathons to nurture a culture of innovation...',
+      'Facilitated technical symposiums and hackathons to nurture a culture of innovation and continuous learning. Supported junior students\' placement readiness through curated mock interviews and skill-building challenges on HackerRank, significantly improving their technical competencies and confidence.',
     icon: Users,
   },
 ];
@@ -69,15 +69,15 @@ const leadershipImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, 
 const leadershipCaptions = [
   "CFG'23 Event Support Volunteer @ JPMorgan Chase",
   "SEP Welcome Week Leadership Team @ JPMorgan Chase",
-  "Fireside Chat with Alison McPherson...",
-  "Early Career Outreach – SEP Talent Acquisition...",
-  "Honored for Impact – Townhall Recognition...",
-  "SEP Welcome Week Leadership Team...",
-  "Official Host of SEPathon 2023...",
-  "Speed mentoring with Executive Leadership...",
-  "SEPathon 2023 Organizers & Mentors...",
-  "Live music performance with the BTech band...",
-  "Young Leader Spotlight – Excellence Award...",
+  "Fireside Chat with Alison McPherson - Head of New Joiner Experience, Digital and Data & Analytics @ JPMorgan Chase",
+  "Early Career Outreach – SEP Talent Acquisition Kiosk Showcase @ JPMorgan Chase",
+  "Honored for Impact – Townhall Recognition at Bengaluru Tech Center 2024",
+  "SEP Welcome Week Leadership Team @ JPMorgan Chase",
+  "Official Host of SEPathon 2023, leading the event and energizing over 100 participants @ JPMorgan Chase",
+  "Speed mentoring with Executive Leadership @ JPMorgan Chase",
+  "SEPathon 2023 Organizers & Mentors @ JPMorgan Chase",
+  "Live music performance with the official band of the Bengaluru Tech Center @ JPMorgan Chase",
+  "Young Leader Spotlight – Excellence Award at Bengaluru Townhall 2024",
 ];
 
 const Leadership = () => {
