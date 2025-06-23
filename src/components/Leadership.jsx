@@ -100,7 +100,7 @@ const Leadership = () => {
   };
 
   return (
-    <section id="leadership" className="min-h-screen p-6 text-white bg-[#1B1B1B]">
+    <section id="leadership" className="min-h-screen p-6 text-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center text-green-400">
           Leadership Experience
@@ -113,7 +113,7 @@ const Leadership = () => {
             return (
               <div
                 key={index}
-                className="group hover:bg-[#2A2A2A] p-6 rounded-lg transition-all duration-300 border-l-4 border-green-400/30 hover:border-green-400"
+                className="group bg-[#1B1B1B] p-6 rounded-lg transition-all duration-300 border-l-4 border-green-400/30 hover:border-green-400"
                 style={{
                   animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`,
                 }}

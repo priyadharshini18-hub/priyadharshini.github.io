@@ -31,22 +31,32 @@ const Home = () => {
         </div>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed min-h-[96px]"
+          className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed min-h-[96px] text-justify"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          I’m Priya, a graduate student in Computer Science at UC Davis,
-          specializing in machine learning, data analysis, and solving
-          real-world problems through technology.
+          Hi, I'm Priya, a Computer Science grad student at UC Davis passionate about machine learning, data analysis, and turning ideas into impactful solutions. 
+          I use technology to tackle real-world challenges and bring meaningful innovations to life. 
+          I enjoy solving DSA and algorithm problems and love working with data, and this passion continues to grow through focused learning in intelligent, data-driven problem solving.
+
         </motion.p>
 
-        <a
+        <motion.a
           href="#techstack"
-          className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition"
+          className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg"
+          animate={{
+            x: [0, -4, 4, -4, 4, 0], // shake left and right
+          }}
+          transition={{
+            repeat: Infinity,
+            repeatDelay: 2, // 2 seconds between shakes
+            duration: 0.4, // how fast the shake happens
+            ease: "easeInOut",
+          }}
         >
           Let’s take a Tour →
-        </a>
+        </motion.a>
 
         <div className="mt-20 space-y-8">
           <div className="flex items-center gap-4">
