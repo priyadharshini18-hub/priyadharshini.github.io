@@ -20,7 +20,7 @@ const Home = () => {
 
         {/* Mobile profile image */}
         <div
-          className="block md:hidden mb-6 relative w-56 h-56 mx-auto rounded-full shadow-[0_0_40px_#22c55eff] overflow-hidden cursor-pointer"
+          className="block md:hidden mb-6 relative w-56 h-56 mx-auto rounded-full shadow-[0_0_15px_#22c55e88] overflow-hidden cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
