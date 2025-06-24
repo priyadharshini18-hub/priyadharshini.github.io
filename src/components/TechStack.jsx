@@ -11,20 +11,23 @@ const TechStack = () => {
   const skills = [
     {
       category: 'Programming Languages',
-      items: ['Python', 'C', 'C++', 'Java', 'PL/SQL', 'BASH'],
+      items: ['Python', 'Java', 'C', 'C++', 'PL/SQL', 'BASH'],
       icon: <Code className="text-green-400" size={24} />,
     },
     {
       category: 'Tools and Frameworks',
       items: [
-        ['Django', 'Flask', 'React', 'AWS', 'PowerBI', 'Jenkins', 'MATLAB', 'Oracle', 'SQLite', 'Git'],
-        ['HTML/CSS', 'REST API', 'Redis', 'Node.js', 'OpenAI', 'Docker', 'Splunk', 'Kubernetes']
+        ['Django', 'Flask', 'Node.js', 'Next.js', 'React', 'HTML/CSS','Jenkins CI/CD', 'Redis', 'PostgreSQL'],
+        ['Splunk', 'Docker', 'Kubernetes', 'REST API', 'API Gateway', 'Amazon - S3', 'AWS Lambda', 'CloudWatch', 'BeautifulSoup']
       ],
       icon: <Wrench className="text-green-400" size={24} />,
     },
     {
       category: 'Machine Learning',
-      items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLP', 'OpenCV', 'LSTM', 'ResNext50', 'SVM'],
+      items: [
+        ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLP', 'OpenCV', 'LSTM'],
+        ['ResNext50', 'SVM', 'AWS SageMaker', 'LangChain', 'Hugging Face', 'OpenAI API']
+      ],
       icon: <Cpu className="text-green-400" size={24} />,
     },
   ];
@@ -46,6 +49,7 @@ const TechStack = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
 
+          {/* Education Section */}
           <div className="lg:col-span-2 space-y-8">
             <motion.div
               variants={boxVariants}
@@ -57,7 +61,6 @@ const TechStack = () => {
                 <BookOpen className="text-green-400 mr-3" size={28} />
                 <h3 className="text-3xl font-semibold text-white-400">Education</h3>
               </div>
-              {/* ...Education content... */}
               <div className="mb-6">
                 <p className="text-xl font-semibold text-green-400 mb-1">University of California, Davis</p>
                 <p className="text-gray-300 italic mb-1">Master's degree, Computer Science (2024 - 2026)</p>
@@ -85,6 +88,7 @@ const TechStack = () => {
             </motion.div>
           </div>
 
+          {/* Skills Section */}
           <div className="lg:col-span-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {skills.map((skill, index) => (
@@ -99,7 +103,7 @@ const TechStack = () => {
                     {skill.icon}
                     <h3 className="text-base font-semibold ml-3 text-white">{skill.category}</h3>
                   </div>
-                  {skill.category === 'Tools and Frameworks' ? (
+                  {Array.isArray(skill.items[0]) ? (
                     <ul className="grid grid-cols-2 gap-x-6 list-disc list-inside text-gray-300 pl-2">
                       {skill.items.flat().map((item, idx) => (
                         <li key={idx} className="mb-1 text-base">{item}</li>
@@ -114,6 +118,8 @@ const TechStack = () => {
                   )}
                 </motion.div>
               ))}
+
+              {/* Other Skills */}
               <motion.div
                 variants={boxVariants}
                 initial="hidden"
