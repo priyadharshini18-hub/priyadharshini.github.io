@@ -21,7 +21,8 @@ const Home = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img
+        {/* This works for previous image profile_1.jpg */}
+        {/* <img
           src={profileImage}
           alt="Priyadharshini Ganeshkumar"
           className="absolute w-[150%] h-[150%] object-cover transition-transform duration-500"
@@ -29,6 +30,16 @@ const Home = () => {
             top: '-54%',
             left: '1%',
             transform: isHovered ? 'scale(1.55)' : 'scale(1.5)',
+          }}
+        /> */}
+
+        <img
+          src={profileImage}
+          alt="Priyadharshini Ganeshkumar"
+          className="absolute w-full h-full object-cover transition-transform duration-500"
+          style={{
+            objectPosition: '85% 15%',
+            transform: isHovered ? 'scale(1.15)' : 'scale(1.05)',  
           }}
         />
       </div>
@@ -60,7 +71,8 @@ const Home = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <img
+          {/* This works for previous image profile_1.jpg */}
+          {/* <img
             src={profileImage}
             alt="Priyadharshini Ganeshkumar"
             className="absolute w-[150%] h-[150%] object-cover transition-transform duration-500"
@@ -68,6 +80,17 @@ const Home = () => {
               top: '-54%',
               left: '1%',
               transform: isHovered ? 'scale(1.55)' : 'scale(1.5)',
+            }}
+          /> */}
+
+          <img
+            src={profileImage}
+            alt="Priyadharshini Ganeshkumar"
+            className="absolute w-full h-full object-cover transition-transform duration-500"
+            style={{
+              // objectPosition: 'center 10%',  
+              objectPosition: '85% 15%',
+              transform: isHovered ? 'scale(1.15)' : 'scale(1.05)',
             }}
           />
         </div>
