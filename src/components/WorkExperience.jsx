@@ -9,8 +9,8 @@ const experiences = [
     period: 'April 2025 - Present',
     description: [
       'Served as a Teaching Assistant for the Philosophy Department (PHI 010: Introduction to Cognitive Science).',
-      'Assisted Professor Jonathan Dorsey by delivering revision lectures, leading group discussions, grading assignments, and proctoring exams for over 100 students, while maintaining high standards of academic integrity and student support.',
-      'Conducted weekly office hours to provide additional academic assistance and mentorship to students.',
+      'Assisted Professor Jonathan Dorsey by delivering revision lectures, leading group discussions, grading assignments for over 100 students, while maintaining high standards of academic integrity.',
+      'Provided mentorship and guidance to students, fostering a collaborative learning environment and promoting critical thinking skills.',
     ],
     skills: ['Teaching', 'Grading', 'Communication', 'Student Mentoring'],
   },
@@ -19,7 +19,7 @@ const experiences = [
     company: 'University of California, Davis',
     period: 'June 2025 - September 2025',
     description: [
-      'Developed and maintained the official Food Science department website used by the UC Davis student community.',
+      'Developed and maintained the official Food and Animal Science department website used by the UC Davis student community.',
       'Redesigned key sections of the website, improving navigation and accessibility for over 6000 students annually.',
       'Onboarded faculty and staff to the platform, managing content updates including news feeds, course schedules, and departmental resources.',
       'Worked with Drupal SiteFarm to implement UI improvements and ensure consistent, user-friendly design across pages.',
@@ -70,7 +70,7 @@ const WorkExperience = () => {
           {/* Mobile left-rail line */}
           <div className="block md:hidden absolute left-4 top-0 bottom-0 w-px bg-green-500/30" />
 
-          <div className="space-y-12">
+          <div className="space-y-4 md:space-y-2">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
 
@@ -88,7 +88,7 @@ const WorkExperience = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
-                        className="bg-[#1B1B1B] rounded-xl p-6 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
+                        className="bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
                       >
                         <ExperienceContent exp={exp} />
                       </motion.div>
@@ -111,7 +111,7 @@ const WorkExperience = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
-                        className="bg-[#1B1B1B] rounded-xl p-6 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
+                        className="bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
                       >
                         <ExperienceContent exp={exp} />
                       </motion.div>
@@ -135,7 +135,7 @@ const WorkExperience = () => {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: false, amount: 0.15 }}
-                      className="flex-1 bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10"
+                      className="flex-1 bg-[#1B1B1B] rounded-xl p-4 shadow-lg border border-green-500/10"
                     >
                       <ExperienceContent exp={exp} />
                     </motion.div>
