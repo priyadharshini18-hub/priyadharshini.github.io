@@ -56,9 +56,9 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I'm Priya — a Computer Science grad student at UC Davis with a strong belief that technology should serve real people. My journey began as a software engineer at JP Morgan Chase, where I moved beyond just writing code to understanding how every feature impacted clients in live trading environments. This shift shaped one of my key qualities: customer obsession. I’ve learned to think from the end-user's perspective, working backward to build solutions that are intuitive, reliable, and genuinely useful.
+          Hi, I'm Priya, a Computer Science grad student at UC Davis with a strong belief that technology should serve real people. My journey began as a software engineer at JP Morgan Chase, where I moved beyond just writing code to understanding how every feature impacted clients in live trading environments. This shift shaped one of my key qualities: customer obsession. I’ve learned to think from the end-user's perspective, working backward to build solutions that are intuitive, reliable, and genuinely useful.
           <br /><br />
-          I’m also deeply passionate about data-driven problem solving, especially in areas like machine learning and analytics where thoughtful patterns lead to impactful decisions. Whether it’s optimizing business processes or debugging stubborn issues under tight deadlines, I take pride in owning challenges and delivering results consistently, and without cutting corners. My curiosity and accountability fuel a mindset of continuous learning and clear execution.
+          I’m also deeply passionate about about AI and building agentic systems that move from theory to real-world impact. Whether it’s designing autonomous workflows, fine-tuning LLMs, or creating AI tools that help users make smarter decisions, I love seeing ideas go from concept to production. I take pride in owning challenges and delivering results consistently, and without cutting corners. My curiosity and accountability fuel a mindset of continuous learning and clear execution.
         </motion.p>
       </div>
 
