@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/priyadharshini.github.io/static/css/main.df59fbd3.css",
-    "main.js": "/priyadharshini.github.io/static/js/main.d2425061.js",
+    "main.css": "/priyadharshini.github.io/static/css/main.8ae86be6.css",
+    "main.js": "/priyadharshini.github.io/static/js/main.b7e045c9.js",
     "static/js/453.5d4c4388.chunk.js": "/priyadharshini.github.io/static/js/453.5d4c4388.chunk.js",
     "static/media/img9.jpeg": "/priyadharshini.github.io/static/media/img9.e46595e40e51ee616a3e.jpeg",
     "static/media/img5.jpeg": "/priyadharshini.github.io/static/media/img5.057ad28fc9ff6bbcfe97.jpeg",
@@ -13,21 +13,25 @@
     "static/media/img2.png": "/priyadharshini.github.io/static/media/img2.d64c4a74b7af4ec8af10.png",
     "static/media/img3.jpg": "/priyadharshini.github.io/static/media/img3.6235b92e652c830fa8d7.jpg",
     "static/media/recommendation.jpeg": "/priyadharshini.github.io/static/media/recommendation.810cf34bd5e1a0c14534.jpeg",
+    "static/media/deepResearch.jpg": "/priyadharshini.github.io/static/media/deepResearch.93f11a79c03da6ebd46e.jpg",
     "static/media/img4.png": "/priyadharshini.github.io/static/media/img4.be697f68982e6e073a5c.png",
     "static/media/img7.jpeg": "/priyadharshini.github.io/static/media/img7.2c8bc7f3c2a4d6aa7242.jpeg",
     "static/media/img1.png": "/priyadharshini.github.io/static/media/img1.96498ef7ff6b7c7ea26a.png",
+    "static/media/constructionSafety.jpeg": "/priyadharshini.github.io/static/media/constructionSafety.93944bce00f07785dff9.jpeg",
     "static/media/drowsiness.jpeg": "/priyadharshini.github.io/static/media/drowsiness.d835e7f254da24594e4a.jpeg",
+    "static/media/foodOrdering.jpeg": "/priyadharshini.github.io/static/media/foodOrdering.d4b7d52eb32c91482343.jpeg",
+    "static/media/rdma.jpg": "/priyadharshini.github.io/static/media/rdma.259694b4bd220e035673.jpg",
     "static/media/ai_in_health.jpeg": "/priyadharshini.github.io/static/media/ai_in_health.7af7cbba4b7aa92180dd.jpeg",
-    "static/media/food_ordering.jpeg": "/priyadharshini.github.io/static/media/food_ordering.00e7ca990e6233a12bab.jpeg",
+    "static/media/tradingPersonas.jpg": "/priyadharshini.github.io/static/media/tradingPersonas.72aeded3fd0412cbeb2d.jpg",
     "static/media/social_media.jpeg": "/priyadharshini.github.io/static/media/social_media.b41399c7199963019412.jpeg",
     "static/media/cognitive_rehab.jpeg": "/priyadharshini.github.io/static/media/cognitive_rehab.008073fafc14e93e06b7.jpeg",
     "index.html": "/priyadharshini.github.io/index.html",
-    "main.df59fbd3.css.map": "/priyadharshini.github.io/static/css/main.df59fbd3.css.map",
-    "main.d2425061.js.map": "/priyadharshini.github.io/static/js/main.d2425061.js.map",
+    "main.8ae86be6.css.map": "/priyadharshini.github.io/static/css/main.8ae86be6.css.map",
+    "main.b7e045c9.js.map": "/priyadharshini.github.io/static/js/main.b7e045c9.js.map",
     "453.5d4c4388.chunk.js.map": "/priyadharshini.github.io/static/js/453.5d4c4388.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df59fbd3.css",
-    "static/js/main.d2425061.js"
+    "static/css/main.8ae86be6.css",
+    "static/js/main.b7e045c9.js"
   ]
 }
