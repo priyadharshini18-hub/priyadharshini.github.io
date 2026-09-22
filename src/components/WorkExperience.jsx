@@ -166,17 +166,17 @@ const WorkExperience = () => {
 const ExperienceContent = ({ exp }) => (
   <div>
     {/* Header */}
-    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
-      <div>
+    <div className="mb-4">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
         <h3 className="text-2xl font-semibold text-white leading-snug">{exp.role}</h3>
-        <div className="flex items-center mt-1 gap-1.5">
-          <Briefcase size={15} className="text-green-400 flex-shrink-0" />
-          <span className="text-base text-gray-400">{exp.company}</span>
+        <div className="flex items-center gap-1.5 flex-shrink-0">
+          <Calendar size={15} className="text-green-400" />
+          <span className="text-base text-gray-400 whitespace-nowrap">{exp.period}</span>
         </div>
       </div>
-      <div className="flex items-center gap-1.5 flex-shrink-0">
-        <Calendar size={15} className="text-green-400" />
-        <span className="text-base text-gray-400 whitespace-nowrap">{exp.period}</span>
+      <div className="flex items-center mt-1 gap-1.5">
+        <Briefcase size={15} className="text-green-400 flex-shrink-0" />
+        <span className="text-base text-gray-400">{exp.company}</span>
       </div>
     </div>
 
