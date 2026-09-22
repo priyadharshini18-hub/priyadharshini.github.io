@@ -103,7 +103,7 @@ const Home = () => {
                 icon: <Briefcase size={40} className="text-green-400" />,
                 title: "Senior Software Engineer - Nyck AI, USA",
                 titleClassName: "text-base sm:text-lg whitespace-nowrap",
-                subtitle: "Ex-Software Engineer, JP Morgan Chase, India",
+                subtitle: "Ex-Software Engineer - JP Morgan Chase, India",
               },
               {
                 icon: <GraduationCap size={40} className="text-green-400" />,
