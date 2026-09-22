@@ -87,7 +87,7 @@ const Contact = () => {
               <MapPin className="text-green-400 mt-1 transition-transform duration-300 hover:scale-125" size={32} />
               <div>
                 <p className="text-xl font-semibold text-white">Location</p>
-                <p className="text-xl text-gray-300">Davis, California</p>
+                <p className="text-xl text-gray-300">San Francisco, California</p>
               </div>
             </div>
           </motion.div>

@@ -4,44 +4,56 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    role: 'Graduate Research Assistant',
-    company: 'University of California, Davis',
-    period: 'April 2025 - Present',
+    role: 'Senior Software Engineer',
+    company: 'Nyck AI, USA (AI-native startup for procurement automation)',
+    period: 'June 2026 - Present',
     description: [
+      'Built a secure client-facing conversational AI interface on a decoupled FastAPI agentic layer exposing GraphQL and REST endpoints, translating ambiguous customer requests into agentic actions across core procurement and inventory workflows.',
+      'Forward-deployed with enterprise clients, shipping full-stack features 0 to 1 from feedback to production.',
+      'Built a Notion MCP loop that auto-triages client tickets and dispatches AI coding agents to draft fixes, optimizing the feedback-to-resolution cycle.',
+      'Architected multi-tenant data isolation with Supabase Row-Level Security, enforcing per-client data boundaries for a privacy-sensitive B2B product.',
+    ],
+    skills: ['FastAPI', 'REST', 'Agentic AI', 'MCP', 'Supabase', 'PostgreSQL'],
+  },
+  {
+    role: 'Graduate Teaching Assistant',
+    company: 'University of California, Davis',
+    period: 'April 2025 - June 2026',
+    description: [
+      'Served as a Teaching Assistant for the Graduate school of management: Business Analytics course (BAX 400-404: Practicum).',
       'Served as a Teaching Assistant for the Philosophy Department (PHI 010: Introduction to Cognitive Science).',
-      'Assisted Professor Jonathan Dorsey by delivering revision lectures, leading group discussions, grading assignments for over 100 students, while maintaining high standards of academic integrity.',
-      'Provided mentorship and guidance to students, fostering a collaborative learning environment and promoting critical thinking skills.',
+      'Mentored students through year-long practicum projects, delivered lectures, and led group discussions for over 200 students while upholding academic integrity.',
     ],
-    skills: ['Teaching', 'Grading', 'Communication', 'Student Mentoring'],
+    skills: ['Teaching', 'Grading', 'Project Management', 'Student Mentoring'],
   },
+  // {
+  //   role: 'Web Developer',
+  //   company: 'University of California, Davis',
+  //   period: 'June 2025 - September 2025',
+  //   description: [
+  //     'Developed and maintained the official Food and Animal Science department website used by the UC Davis student community.',
+  //     'Redesigned key sections of the website, improving navigation and accessibility for over 6000 students annually.',
+  //     'Onboarded faculty and staff to the platform, managing content updates including news feeds, course schedules, and departmental resources.',
+  //     'Worked with Drupal SiteFarm to implement UI improvements and ensure consistent, user-friendly design across pages.',
+  //   ],
+  //   skills: ['UI Design', 'Website Maintenance', 'Drupal', 'SiteFarm', 'HTML', 'CSS'],
+  // },
   {
-    role: 'Web Developer',
-    company: 'University of California, Davis',
-    period: 'June 2025 - September 2025',
-    description: [
-      'Developed and maintained the official Food and Animal Science department website used by the UC Davis student community.',
-      'Redesigned key sections of the website, improving navigation and accessibility for over 6000 students annually.',
-      'Onboarded faculty and staff to the platform, managing content updates including news feeds, course schedules, and departmental resources.',
-      'Worked with Drupal SiteFarm to implement UI improvements and ensure consistent, user-friendly design across pages.',
-    ],
-    skills: ['UI Design', 'Website Maintenance', 'Drupal', 'SiteFarm', 'HTML', 'CSS'],
-  },
-  {
-    role: 'Software Engineer 1',
+    role: 'Software Engineer',
     company: 'JP Morgan Chase & Co.',
-    period: 'July 2022 - June 2024',
+    period: 'January 2022 - June 2024',
     description: [
       'Led the application modernization by migrating from legacy VSI to a new data center, reducing batch processing time by 45-60 minutes on downstream interfaces. Conducted regression testing, resolved critical issues, and validated batch operations post DNS switch.',
       'Optimized database management by migrating from PSI Infrastructure to in-house Oracle service GOS, delivering a cost-effective and scalable solution for the application\'s database requirements.',
       'Automated the deployment of Control-M XML in production using ITPAM, removing the dependency on manual uploads. Integrated a one-click solution in the CI/CD pipeline, reducing deployment time by 30 minutes.',
       'Supported production incident management and SFTP migrations ensuring smooth system operations.',
     ],
-    skills: ['Oracle', 'SQL Query Optimization', 'CI/CD', 'Control-M', 'React'],
+    skills: ['Oracle', 'SQL Query Optimization', 'CI/CD Pipelines', 'AWS', 'React'],
   },
   {
     role: 'Software Engineer Intern',
     company: 'JP Morgan Chase & Co.',
-    period: 'January 2022 - June 2022',
+    period: 'May 2021 - July 2021',
     description: [
       'Contributed to the development and regression testing of the core batch during Informatica decommission.',
       'Built an automated comparison utility for table and file data validation across multiple environments and production systems, reducing manual regression testing efforts by over 2 hours per cycle.',
@@ -88,7 +100,7 @@ const WorkExperience = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
-                        className="bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
+                        className="min-w-0 bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
                       >
                         <ExperienceContent exp={exp} />
                       </motion.div>
@@ -111,7 +123,7 @@ const WorkExperience = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
-                        className="bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
+                        className="min-w-0 bg-[#1B1B1B] rounded-xl p-5 shadow-lg border border-green-500/10 hover:border-green-500/30 transition-colors duration-300"
                       >
                         <ExperienceContent exp={exp} />
                       </motion.div>

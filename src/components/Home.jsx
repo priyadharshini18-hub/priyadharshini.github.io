@@ -56,7 +56,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I'm Priya, a Computer Science grad student at UC Davis with a strong belief that technology should serve real people. My journey began as a software engineer at JP Morgan Chase, where I moved beyond just writing code to understanding how every feature impacted clients in live trading environments. This shift shaped one of my key qualities: customer obsession. I’ve learned to think from the end-user's perspective, working backward to build solutions that are intuitive, reliable, and genuinely useful.
+          Hi, I'm Priya, a Computer Science graduate from UC Davis with a strong belief that technology should serve real people. My journey began as a software engineer at JP Morgan Chase, where I moved beyond just writing code to understanding how every feature impacted clients in live trading environments. This shift shaped one of my key qualities: customer obsession. I’ve learned to think from the end-user's perspective, working backward to build solutions that are intuitive, reliable, and genuinely useful.
           <br /><br />
           I’m also deeply passionate about about AI and building agentic systems that move from theory to real-world impact. Whether it’s designing autonomous workflows, fine-tuning LLMs, or creating AI tools that help users make smarter decisions, I love seeing ideas go from concept to production. I take pride in owning challenges and delivering results consistently, and without cutting corners. My curiosity and accountability fuel a mindset of continuous learning and clear execution.
         </motion.p>
@@ -97,17 +97,18 @@ const Home = () => {
 
         {/* Info cards + Button (indented only on desktop) */}
         <div className="pl-0 md:pl-8">
-          <div className="space-y-8 mb-8 max-w-xs text-left">
+          <div className="space-y-8 mb-8 max-w-md text-left">
             {[
               {
-                icon: <GraduationCap size={40} className="text-green-400" />,
-                title: "CS Graduate",
-                subtitle: "University of California, Davis",
+                icon: <Briefcase size={40} className="text-green-400" />,
+                title: "Senior Software Engineer - Nyck AI, USA",
+                titleClassName: "text-base sm:text-lg whitespace-nowrap",
+                subtitle: "Ex-Software Engineer, JP Morgan Chase, India",
               },
               {
-                icon: <Briefcase size={40} className="text-green-400" />,
-                title: "Ex-Software Engineer",
-                subtitle: "JP Morgan Chase, India",
+                icon: <GraduationCap size={40} className="text-green-400" />,
+                title: "Master's in Computer Science",
+                subtitle: "University of California, Davis",
               },
               {
                 icon: <FileText size={40} className="text-green-400" />,
@@ -123,11 +124,11 @@ const Home = () => {
                   </a>
                 ),
               },
-            ].map(({ icon, title, subtitle }, idx) => (
+            ].map(({ icon, title, titleClassName, subtitle }, idx) => (
               <div key={idx} className="flex items-start gap-4">
                 {icon}
                 <div>
-                  <p className="text-xl text-white font-medium">{title}</p>
+                  <p className={`text-white font-medium ${titleClassName || 'text-xl'}`}>{title}</p>
                   <div className="text-lg text-gray-300">{subtitle}</div>
                 </div>
               </div>

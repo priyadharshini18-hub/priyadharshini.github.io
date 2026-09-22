@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm view:*)",
+      "Bash(npm ls:*)",
+      "Bash(find /Users/priya/priyadharshini.github.io/src -name *.scss -o -name *.sass)",
+      "Bash(npm run:*)",
+      "Bash(python3 -c ':*)",
+      "Bash(python3 -c \"import json,sys; v=json.load\\(sys.stdin\\); print\\([x for x in v if x.startswith\\('2.'\\)][-5:]\\)\")",
+      "Bash(python3 -c \"import json,sys; v=json.load\\(sys.stdin\\); print\\('Latest versions:', v[-5:]\\)\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(GIT_SEQUENCE_EDITOR='sed -i \"s/^pick d46375c/reword d46375c/\"' git rebase -i ebc552f)",
+      "Bash(git rebase:*)"
+    ]
+  }
+}
